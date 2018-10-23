@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Anthony Bond
+  description: InfluxData telegraf collects and sends data to InfluxDB
+  company: toilops.com
+  license: MIT
+  min_ansible_version: 2.4
+  platforms:
+  - name: EL
+    versions:
+    - 7
+    - 6
+  galaxy_tags: []
+dependencies:
+  - { role: toilops.influxdata_repo }

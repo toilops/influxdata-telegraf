@@ -1,0 +1,7 @@
+---
+# tasks file for influxdata-telegraf
+- name: Install Telegraf
+  yum:
+    name: "{{ telegraf_name }}"
+    state: "{{ telegraf_version }}"
+  when: ansible_os_family == "RedHat"

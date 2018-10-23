@@ -1,0 +1,4 @@
+---
+# defaults file for influxdata-telegraf
+telegraf_name: "telegraf"
+telegraf_version: latest
