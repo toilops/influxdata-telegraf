@@ -5,3 +5,10 @@
     name: "{{ telegraf_name }}"
     state: "{{ telegraf_version }}"
   when: ansible_os_family == "RedHat"
+
+
+- name: Start Influxdata
+  service:
+    name: "{{ telegraf_name }}"
+    state: started
+    enabled: yes
